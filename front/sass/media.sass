@@ -1,0 +1,242 @@
+// @media screen and (max-width: 1550px)
+//     body
+//         background-color: #eaeaea
+
+// @media screen and (orientation: landscape) and (max-device-width: 485px)
+//   html
+//     -webkit-transform: rotate(-90deg)
+//     -moz-transform: rotate(-90deg)
+//     -ms-transform: rotate(-90deg)
+//     -o-transform: rotate(-90deg)
+//     transform: rotate(-90deg)
+//     -webkit-transform-origin: left top
+//     -moz-transform-origin: left top
+//     -ms-transform-origin: left top
+//     -o-transform-origin: left top
+//     transform-origin: left top
+//     width: 320px
+//     height: 480px
+//     // Разрешение экрана iPhone
+//     position: absolute
+//     top: 100%
+//     left: 0
+
+// @media screen and (max-width: 1300px) and (max-height: 730px) and (min-width: 1270px) and (min-height: 650px) 
+
+
+
+@media screen and (max-width: 1620px)
+  .wheel
+    width: 500px
+    height: 500px
+    top: calc(50% - 500px/2)
+    left: calc(50% - 500px/2)
+    &__arrow
+      width: 100px
+      left: calc(50% - 100px/2)
+  .btn.spin
+    margin: 0 auto 30px
+
+@media screen and (max-width: 1590px)
+  .wheel
+    width: 460px
+    height: 460px
+    top: calc(50% - 460px/2)
+    left: calc(50% - 460px/2)
+    &__arrow
+      width: 90px
+      left: calc(50% - 90px/2)
+
+@media screen and (max-width: 1400px)
+  .info
+    padding-top: 25px
+  .wheel
+    width: 380px
+    height: 380px
+    top: calc(50% - 380px/2)
+    left: calc(50% - 380px/2)
+    &__arrow
+      width: 70px
+      left: calc(50% - 70px/2)
+  .btn.spin
+    width: 250px
+    height: 54px
+    font-size: 25px
+  .prize
+    &__info
+      margin: 248px auto 35px
+    &__wall
+      width: 770px
+      height: 572px
+    &.gift
+      .prize__box-text
+        height: 88px
+        font-size: 24px
+      .prize__box-first
+        width: 208px
+        position: absolute
+        top: 66px
+        animation: 1s ease-in-out 0s normal running box-top
+      .prize__box-last
+        width: 317px
+        position: absolute
+        bottom: 66px
+        animation: 1s ease-in-out 0s normal running box-bottom
+      .prize__box-info
+        height: 164px
+        top: calc(50% - 113px)
+    &__btn
+      height: 54px
+      font-size: 25px
+
+  @keyframes box-top
+    0%
+      top: 220px
+
+    100%
+      top: 66px
+
+  @keyframes box-bottom
+    0%
+      bottom: 220px
+
+    100%
+      bottom: 66px
+
+@media screen and (max-width: 750px)
+  body
+    background: url('../img/mob-bg.jpg') center center no-repeat
+    background-size: cover
+  .container
+    width: 100%
+  .info
+    padding-top: 24px
+    &__title
+      padding-bottom: 15px
+      font-size: 14px
+      line-height: 17px
+      span
+        color: #FFBA0A
+    &__description
+      flex-direction: column
+      text-align: center
+      span
+        margin-bottom: 8px
+  .wheel
+    width: 360px
+    height: 360px
+    top: calc(50% - 360px/2)
+    left: calc(50% - 360px/2)
+    &__main
+      &.first-spin
+        transform: rotate(1254deg)
+      &.second-spin
+        transform: rotate(1940deg)
+      img
+        &.desc
+          display: none
+        &.mob
+          display: block
+  .btn.spin
+    width: 296px
+    height: 64px
+    font-size: 28px
+  .prize
+    &__wall
+      width: 324px
+      height: 424px
+      background: url('../img/mob-wall.png') center center no-repeat
+      background-size: cover
+    &__info
+      width: 214px
+      margin: 154px auto 22px
+      font-size: 18px
+    &__btn
+      width: 112px
+      height: 32px
+      border-radius: 8px
+      font-size: 12px
+    &.gift
+      .prize__box-text
+        height: 66px
+        font-size: 18px
+      .prize__box-first
+        width: 112px
+        top: 66px
+        animation: 1s ease-in-out 0s normal running box-top
+      .prize__box-last
+        width: 170px
+        bottom: 46px
+        animation: 1s ease-in-out 0s normal running box-bottom
+      .prize__box-info
+        height: 120px
+        top: calc(50% - 63px)
+
+  @keyframes box-top
+    0%
+      top: 160px
+
+    100%
+      top: 66px
+
+  @keyframes box-bottom
+    0%
+      bottom: 138px
+
+    100%
+      bottom: 46px
+
+  @keyframes first-spin
+    0%
+      transform: rotate(0deg)
+
+    100%
+      transform: rotate(1254deg)
+
+  @keyframes second-spin
+    0%
+      transform: rotate(1254deg)
+
+    100%
+      transform: rotate(1940deg)
+
+@media screen and (max-width: 376px)
+  .wheel
+    width: 320px
+    height: 320px
+    top: calc(50% - 290px/2)
+    left: calc(50% - 320px/2)
+
+
+
+
+// @media screen and (max-width: 768px)
+
+
+// @media screen and (max-width: 515px)
+
+
+// @media screen and (max-width: 400px)
+
+
+@media screen and (max-height: 430px)
+  body
+    min-height: 650px
+    overflow: unset
+
+
+
+// @media screen and (max-width: 325px)
+
+
+// @media screen and (max-width: 330px) and (max-height: 578px) and (min-width: 315px) and (min-height: 558px) 
+
+
+// @media screen and (max-width: 330px) and (max-height: 478px) and (min-width: 315px) and (min-height: 458px) 
+
+
+// // -------------------------------- iPad ----------------------------------------------
+// @media screen and (max-width: 775px) and (max-height: 1030px) and (min-width: 760px) and (min-height: 1020px) 
+
+
+// // -------------------------------- iPad ----------------------------------------------

@@ -1,0 +1,197 @@
+body
+    width: 100%
+    height: 100%
+    position: relative
+    overflow: hidden
+    font-family: 'Stolzl-Regular'
+    background: url('../img/bg.jpg') center center no-repeat
+    background-size: cover
+
+.container
+    width: 755px
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: relative
+    margin: 0 auto
+.info
+    padding-top: 47px
+    &__title
+        padding-bottom: 15px
+        font-weight: 700
+        font-size: 24px
+        line-height: 29px
+        text-align: center
+        font-family: 'Stolzl-Bold'
+        letter-spacing: 0.10em
+        text-transform: uppercase
+        color: #fff
+        span
+            color: #FFBA0A
+    &__description
+        display: flex
+        justify-content: space-between
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #fff
+
+.wheel
+    width: 630px
+    height: 630px
+    position: absolute
+    top: calc(50% - 630px/2)
+    left: calc(50% - 630px/2)
+    display: flex
+    align-items: center
+    justify-content: center
+    &__main
+        width: 100%
+        height: 100%
+        &.first-spin
+            transform: rotate(1116deg)
+            animation: 3s ease-in-out 0s normal running first-spin
+        &.second-spin
+            transform: rotate(1814deg)
+            animation: 3s ease-in-out 0s normal running second-spin
+        img
+            &.desc
+                display: block
+            &.mob
+                display: none
+    &__arrow
+        width: 130px
+        position: absolute
+        z-index: 1
+        top: 0
+        left: calc(50% - 130px/2)
+
+
+.btn
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #FFCE44
+    box-shadow: 0px 10px 20px rgba(59, 2, 127, 0.64)
+    border-radius: 12px
+    cursor: pointer
+    color: #2B2B2B
+    &:hover
+        background: #c8a036
+    &.spin
+        width: 296px
+        height: 64px
+        margin: 0 auto 56px
+        font-weight: 400
+        font-size: 28px
+.prize
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    //display: flex
+    display: none
+    justify-content: center
+    align-items: center
+    background: rgba(16, 23, 188, 0.8)
+    &.try
+        display: flex
+        .prize__gift
+            display: none
+    &.gift
+        display: flex
+        .prize__try
+            display: none
+        .prize
+            &__gift
+                height: 100%
+                position: relative
+                display: flex
+                flex-direction: column
+                align-items: center
+            &__box-first
+                width: 208px
+                position: absolute
+                top: 98px
+                animation: 1s ease-in-out 0s normal running box-top
+            &__box-last
+                width: 317px
+                position: absolute
+                bottom: 90px
+                animation: 1s ease-in-out 0s normal running box-bottom
+            &__box-info
+                height: 200px
+                position: absolute
+                top: calc(50% - 128px)
+                display: none
+                &.show
+                    display: block
+            &__box-text
+                height: 116px
+                margin-bottom: 20px
+                font-family: 'Stolzl-Bold'
+                font-size: 30px
+                line-height: 121.5%
+                text-align: center
+                color: #fff
+                span
+                    color: #FFBA0A
+
+    &__wall
+      width: 912px
+      height: 679px
+      background: url('../img/wall.png') center center no-repeat
+      background-size: cover
+    &__info
+        width: 672px
+        margin: 274px auto 35px
+        font-family: 'Stolzl-Bold'
+        font-size: 30px
+        line-height: 121.5%
+        text-align: center
+        letter-spacing: 0.03em
+        color: #fff
+    &__btn
+        width: 224px
+        height: 64px
+        margin: 0 auto
+        font-size: 24px
+        letter-spacing: 0.03em
+        &.get
+            text-decoration: none
+
+
+
+@keyframes first-spin
+    0%
+        transform: rotate(0deg)
+
+    100%
+        transform: rotate(1116deg)
+
+@keyframes second-spin
+    0%
+        transform: rotate(1116deg)
+
+    100%
+        transform: rotate(1814deg)
+
+@keyframes box-top
+    0%
+        top: 220px
+
+    100%
+        top: 98px
+
+@keyframes box-bottom
+    0%
+        bottom: 220px
+
+    100%
+        bottom: 90px
+
+
+
